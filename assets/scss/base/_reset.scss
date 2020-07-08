@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Libre+Franklin:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+html {
+  font-size: 16px;
+  font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}

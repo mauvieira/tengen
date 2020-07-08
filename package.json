@@ -2,5 +2,11 @@
   "name": "tengen",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build:scss": "node-sass -w assets/scss/main.scss assets/css/bundle.css --output-style compressed"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
