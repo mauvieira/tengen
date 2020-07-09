@@ -1,0 +1,23 @@
+$grid__bp--lg: 1170;
+$grid__bp--md: 768;
+$grid__bp--sm: 320;
+
+
+.container {
+  max-width: $grid__bp-lg * 1px;
+  margin: 0 auto;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+$grid__cols: 12;
+
+@for $i from 1 through $grid__cols {
+  .col-sm-#{$i} {
+    flex-basis: (100 / ($grid__cols / $i) ) * 1%;
+  }
+}
