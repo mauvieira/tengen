@@ -2,22 +2,20 @@ $grid__bp--lg: 1170;
 $grid__bp--md: 768;
 $grid__bp--sm: 320;
 
+$grid__gutter: 20px;
 
-.container {
-  max-width: $grid__bp-lg * 1px;
+
+.flex {
+  max-width: $grid__bp-lg + px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-item-1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  align-self: flex-start;
 
-  &__row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
 }
 
-$grid__cols: 12;
-
-@for $i from 1 through $grid__cols {
-  .col-sm-#{$i} {
-    flex-basis: (100 / ($grid__cols / $i) ) * 1%;
-  }
-}
+// 100 / colunas * i - gutter 
