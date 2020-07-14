@@ -1,3 +1,7 @@
 .hero__text{
   padding-right: 100px;
-}
+
+  @include device(small){
+    padding-right: 0;
+  }
+}; 
