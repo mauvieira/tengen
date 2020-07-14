@@ -13,19 +13,39 @@ $small-device: 480px;
       @content;
     }
   } @else if $size == medium {
-    @media screen and (min-width: $medium-device) and (max-width: $large-device - 1) {
+    @media screen and (max-width: $large-device - 1) {
       @content;
     }
   } @else if $size == small {
-    @media screen and (min-width: $small-device) and (max-width: $medium-device - 1) {
+    @media screen and (max-width: $medium-device - 1){
       @content;
     }
   }
 }
 
-// Create Grid
+@mixin container {
+  max-width: $large-device;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 
-@function createGrid($col, $offset: false){
+  @include device(medium) {
+    max-width: $medium-device;
+  }
+
+  @include device(small) {
+    max-width: $small-device;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.container {
+  @include container;
+}
+
+// Create Grid
+@function createGrid($col, $offset: false) {
   $width: $col / $columns * 100 + "%";
   $result: calc(#{$width} - #{$gutter});
 
@@ -35,10 +55,42 @@ $small-device: 480px;
   }
 
   @return $result;
-};
+}
 
+// Create Classes
 @for $i from 1 through $columns {
-  .grid-#{$i}{
+  .grid-#{$i} {
     width: createGrid($i);
   }
-} 
+}
+
+// Mixin Grid Structure
+@mixin grid-structure {
+  min-height: 1px;
+  margin-left: $gutter / 2;
+  margin-right: $gutter / 2;
+
+  @include device(small) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+[class^="grid-"] {
+  @include grid-structure;
+}
+
+// Create Offset Classes
+@for $i from 1 through $columns {
+  .offset-#{$i} {
+    width: createGrid($i, true);
+    @extend %offset;
+  }
+}
+
+@include device(small) {
+  %offset {
+    margin-left: 0px;
+  }
+}
