@@ -1,21 +1,24 @@
-$grid__bp--lg: 1170;
-$grid__bp--md: 768;
-$grid__bp--sm: 320;
+// Grid Variables
+$columns: 12;
+$gutter: 20px;
+$large-device: 1170px;
+$medium-device: 760px;
+$small-device: 480px;
 
-$grid__gutter: 20px;
+// Media Queries Mixins
 
-
-.flex {
-  max-width: $grid__bp-lg + px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+@mixin device($size) {
+  @if $size == large {
+    @media screen and (min-width: $large-device) {
+      @content;
+    }
+  } @else if $size == medium {
+    @media screen and (min-width: $medium-device) and (max-width: $large-device - 1) {
+      @content;
+    }
+  } @else if $size == small {
+    @media screen and (min-width: $small-device) and (max-width: $medium-device - 1) {
+      @content;
+    }
+  }
 }
-.flex-item-1 {
-  margin-left: 10px;
-  margin-right: 10px;
-  align-self: flex-start;
-
-}
-
-// 100 / colunas * i - gutter 
