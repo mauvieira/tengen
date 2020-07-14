@@ -1,6 +1,9 @@
+@import "./utilities/variables";
+@import "./utilities/functions";
+
 @import "./base/reset";
 @import "./base/typography";
 
 @import "./layout/grid";
 
-@import "./pages/home";
+@import "./pages/home"; 

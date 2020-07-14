@@ -1,0 +1,21 @@
+@function titleSize($size) {
+  @if $size == "max" {
+    @return 4rem;
+  } @else if $size == "mid" {
+    @return 3rem;
+  }
+}
+@function subTitleSize($size) {
+  @if $size == "max" {
+    @return 2rem;
+  } @else if $size == "mid" {
+    @return 1.5rem;
+  }
+}
+@function bodySize($size) {
+  @if $size == "max" {
+    @return 1.2rem;
+  } @else if $size == "mid" {
+    @return 1rem;
+  }
+}

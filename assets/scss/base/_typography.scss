@@ -1,8 +1,42 @@
-h1, h2, h3, h4{
-  font-family: 'Libre Baskerville', serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Libre Baskerville", serif;
   line-height: 115%;
+  color: $support-gray-darker;
+  font-weight: 400;
 }
-p{
+
+.title {
+  &--max {
+    font-size: titleSize("max");
+  }
+  &--mid {
+    font-size: titleSize("mid");
+  }
+}
+
+.subtitle {
+  &--max {
+    font-size: subTitleSize("max");
+  }
+  &--mid {
+    font-size: subTitleSize("mid");
+  }
+}
+
+p {
   font-size: 1rem;
   line-height: 125%;
+  color: $support-gray-dark;
+}
+
+.body {
+  &--max {
+    font-size: bodySize("max");
+  }
+  &--mid {
+    font-size: bodySize("mid");
+  }
 }

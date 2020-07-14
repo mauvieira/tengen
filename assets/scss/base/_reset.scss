@@ -8,6 +8,13 @@
   text-decoration: none;
   list-style: none;
 }
+a {
+  color: $support-gray-dark;
+
+  &:visited {
+    color: unset;
+  }
+}
 img {
   display: block;
   height: auto;
