@@ -36,3 +36,9 @@ $small-device: 480px;
 
   @return $result;
 };
+
+@for $i from 1 through $columns {
+  .grid-#{$i}{
+    width: createGrid($i);
+  }
+} 
