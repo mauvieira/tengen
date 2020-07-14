@@ -5,7 +5,7 @@ $large-device: 1170px;
 $medium-device: 760px;
 $small-device: 480px;
 
-// Media Queries Mixins
+// Media Queries Mixin
 
 @mixin device($size) {
   @if $size == large {
@@ -22,3 +22,17 @@ $small-device: 480px;
     }
   }
 }
+
+// Create Grid
+
+@function createGrid($col, $offset: false){
+  $width: $col / $columns * 100 + "%";
+  $result: calc(#{$width} - #{$gutter});
+
+  @if $offset == true {
+    $gutter: $gutter / 2;
+    $result: calc(#{$width} + #{$gutter});
+  }
+
+  @return $result;
+};
