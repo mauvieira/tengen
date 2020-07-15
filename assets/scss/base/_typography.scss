@@ -8,6 +8,12 @@ h4 {
   font-weight: 400;
 }
 
+p {
+  font-size: 1rem;
+  line-height: 125%;
+  color: $support-gray-dark;
+}
+
 .title {
   &--max {
     font-size: titleSize("max");
@@ -24,12 +30,6 @@ h4 {
   &--mid {
     font-size: subTitleSize("mid");
   }
-}
-
-p {
-  font-size: 1rem;
-  line-height: 125%;
-  color: $support-gray-dark;
 }
 
 .body {

@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build:scss": "node-sass -w assets/scss/main.scss assets/css/bundle.css --output-style compressed"
+    "build:scss": "node-sass -w assets/scss/main.scss assets/css/bundle.css --output-style compressed",
+    "dev:scss": "node-sass -w assets/scss/main.scss assets/css/bundle.css"
   },
   "dependencies": {
     "node-sass": "^4.14.1"
