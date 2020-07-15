@@ -1,20 +1,22 @@
 @mixin generateBottomBar($color: $focus-regular, $centered: false) {
-  display: block;
-  margin-top: 5px;
-  width: 150px;
-  background: $color;
-  height: 7px;
-  content: "";
+  &::after {
+    display: block;
+    margin: 5px 0;
+    width: 150px;
+    background: $color;
+    height: 7px;
+    content: "";
 
-  @if $centered == true {
-    margin: 5px auto 0 auto;
+    @if $centered == true {
+      margin: 5px auto;
+    }
   }
 }
 
-@mixin generateShadow($size: sm) {
-  @if $size == sm {
+@mixin generateShadow($size: "sm") {
+  @if $size == "sm" {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+  } @else if $size == "md" {
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2), 0px 3px 16px rgba(0, 0, 0, 0.12), 0px 9px 12px rgba(0, 0, 0, 0.14);
-  } @else if $size == md {
-    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14);
   }
 }
