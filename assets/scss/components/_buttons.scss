@@ -1,0 +1,28 @@
+%button-placeholder {
+  padding: 16px 42px;
+  border-radius: 44px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+  font-size: bodySize("mid");
+  line-height: 100%;
+}
+
+.button {
+  @extend %button-placeholder;
+
+  &--primary {
+    background: $focus-regular;
+    color: $support-white-lighter;
+
+    &:hover {
+      background: $focus-dark;
+    }
+
+    &:visited {
+      color: $support-white-lighter;
+    }
+  }
+}
