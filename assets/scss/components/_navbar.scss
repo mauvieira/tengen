@@ -1,0 +1,25 @@
+.header{
+  @include generateShadow()
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    max-width: 190px;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+  &__item{
+    display: block;
+    padding: 32px 24px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+
+    &:hover{
+      color: $focus-darker;
+    }
+  }
+}
