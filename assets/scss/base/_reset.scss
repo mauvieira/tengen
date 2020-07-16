@@ -20,4 +20,8 @@ html {
   font-size: 16px;
   font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
+
+  @include device(medium){
+    font-size: 14px;
+  }
 }

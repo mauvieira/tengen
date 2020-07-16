@@ -1,13 +1,29 @@
 .hero {
   padding: 128px 0;
 
+  @include device(medium){
+    padding: 64px 0;
+  }
+
   &__content {
     padding-right: 100px;
+    @include device(medium){
+      padding-right: 30px;
+    }
+    @include device(small){
+      padding-right: 0;
+    }
+  
   }
   &__subtitle {
     padding: 24px 0;
   }
 
+  &__cards{
+    @include device(small){
+      padding-top: 64px;
+    }
+  }
   .card {
     @include generateShadow();
     display: flex;
@@ -21,7 +37,7 @@
     &__image {
       width: 100px;
       height: 100px;
-      background: palevioletred;
+      background: $support-white-darker;
       border-radius: 8px;
     }
     &__content {

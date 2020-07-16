@@ -1,28 +1,3 @@
-// Grid Variables
-$columns: 12;
-$gutter: 20px;
-$large-device: 1170px;
-$medium-device: 760px;
-$small-device: 480px;
-
-// Media Queries Mixin
-
-@mixin device($size) {
-  @if $size == large {
-    @media screen and (min-width: $large-device) {
-      @content;
-    }
-  } @else if $size == medium {
-    @media screen and (max-width: $large-device - 1) {
-      @content;
-    }
-  } @else if $size == small {
-    @media screen and (max-width: $medium-device - 1) {
-      @content;
-    }
-  }
-}
-
 // Create Grid
 @function createGrid($col, $offset: false) {
   $width: $col / $columns * 100 + "%";
