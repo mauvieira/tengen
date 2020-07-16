@@ -5,9 +5,10 @@
 @import "./base/reset";
 @import "./base/typography";
 
+@import "./layout/grid";
+
 @import "./components/buttons";
 @import "./components/navbar";
 
-@import "./layout/grid";
 
 @import "./pages/home";

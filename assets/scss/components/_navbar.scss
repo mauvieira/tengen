@@ -2,15 +2,22 @@
   @include generateShadow()
 }
 .navbar{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   &__logo {
     max-width: 190px;
+    @include device(small){
+      max-width: 150px;
+    }
   }
   &__menu {
     display: flex;
     align-items: center;
+    @include device(small){
+      display: none;
+    }
   }
   &__item{
     display: block;
@@ -20,6 +27,13 @@
 
     &:hover{
       color: $focus-darker;
+    }
+  }
+  &__hamburger{
+    display: none;
+    padding: 16px;
+    @include device(small){
+      display: block;
     }
   }
 }
