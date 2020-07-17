@@ -70,13 +70,14 @@
 }
 
 .mission {
+  padding-bottom: 64px;
   &__text{
     padding-right: 100px;
     @include device(small){
       padding-right: 0;
     }
   }
-  &__title{
+  &__title{ 
     @include generateBottomBar();
     padding-bottom: 1.5rem;
 
@@ -93,4 +94,8 @@
       margin-top: 2rem;
     }
   }
+}
+
+.impact {
+  padding-bottom: 64px;
 }
