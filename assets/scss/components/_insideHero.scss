@@ -1,0 +1,12 @@
+.inside {
+  padding: 128px 0;
+  background: $support-gray-regular;
+
+  @include device(medium){
+    padding: 64px 0;
+  }
+
+  &__title {
+    color: $support-white-lighter;
+  }
+}
