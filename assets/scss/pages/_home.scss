@@ -1,26 +1,25 @@
 .hero {
   padding: 128px 0;
 
-  @include device(small){
+  @include device(small) {
     padding: 64px 0;
   }
 
   &__content {
     padding-right: 100px;
-    @include device(medium){
+    @include device(medium) {
       padding-right: 30px;
     }
-    @include device(small){
+    @include device(small) {
       padding-right: 0;
     }
-  
   }
   &__subtitle {
     padding: 24px 0;
   }
 
-  &__cards{
-    @include device(small){
+  &__cards {
+    @include device(small) {
       padding-top: 64px;
     }
   }
@@ -40,11 +39,11 @@
       background: $support-white-darker;
       border-radius: 8px;
 
-      @include device(medium){
+      @include device(medium) {
         width: 70px;
         height: 70px;
       }
-      @include device(small){
+      @include device(small) {
         width: 100px;
         height: 100px;
       }
@@ -62,8 +61,8 @@
       display: block;
       width: 20px;
 
-      @include device(medium){
-        bottom:  -1rem;
+      @include device(medium) {
+        bottom: -1rem;
       }
     }
   }
@@ -71,31 +70,61 @@
 
 .mission {
   padding-bottom: 64px;
-  &__text{
+  &__text {
     padding-right: 100px;
-    @include device(small){
+    @include device(small) {
       padding-right: 0;
     }
   }
-  &__title{ 
+  &__title {
     @include generateBottomBar();
     padding-bottom: 1.5rem;
-
   }
-  &__body{
+  &__body {
     padding-bottom: 1.5rem;
   }
 
-  &__picture{
+  &__picture {
     height: 300px;
     border-radius: 8px;
     background: $support-white-darker;
-    @include device(small){
+    @include device(small) {
       margin-top: 2rem;
     }
   }
 }
 
 .impact {
-  padding-bottom: 64px;
+  padding: 64px 0;
+  background: $focus-darker;
+
+  &__title,
+  &__body,
+  &__number,
+  &__info {
+    color: $support-white-lighter;
+    text-align: center;
+  }
+
+  &__title {
+    @include generateBottomBar($support-gray-darker, true);
+    // padding-bottom: 1.5rem;
+  }
+
+  &__body {
+    max-width: 670px;
+    margin: 32px auto;
+  }
+
+  span {
+    display: block;
+  }
+
+  &__card {
+    margin-bottom: 24px;
+  }
+
+  &__number {
+    font-size: 32px;
+  }
 }
