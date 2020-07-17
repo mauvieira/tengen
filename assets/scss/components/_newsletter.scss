@@ -1,0 +1,23 @@
+.newsletter {
+  padding: 80px 0;
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__form {
+    align-items: center;
+  }
+
+  &__input {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    padding: 12px 8px;
+    border: 2px solid $support-gray-lighter;
+    font-size: 1rem;
+    @include device(small) {
+      margin-bottom: 1rem;
+    }
+  }
+}
