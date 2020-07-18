@@ -1,3 +1,20 @@
 .break {
   padding: 80px 0;
+  background: $support-gray-regular;
+  @include device(small){
+    padding: 64px 0;
+  }
+
+  &__title{
+    text-align: center;
+    color: $support-white-lighter;
+    margin-bottom: 1.5rem;
+  }
+
+  &__button{
+    margin: 0 auto;
+    display: block;
+    max-width: 154px;
+    margin: 0 auto;
+  }
 }
