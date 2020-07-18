@@ -1,0 +1,22 @@
+.plants {
+  padding-top: 80px;
+
+  &__card{
+    padding-bottom: 80px;
+  }
+
+  &__picture{
+    height: 400px;
+    background: $support-gray-regular;
+    border-radius: 8px;
+  }
+
+  &__text{
+    padding-left: 100px;
+    @include device(small){
+      padding-left: 0;
+      padding-bottom: 2rem;
+      order: -1;
+    }
+  }
+}
