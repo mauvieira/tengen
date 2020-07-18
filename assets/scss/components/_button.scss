@@ -9,6 +9,12 @@
   font-size: bodySize("mid");
   line-height: 100%;
   @include generateShadow("sm");
+
+  @include device(small){
+    display: block;
+    max-width: 215px;
+    margin: 0 auto;
+  }
 }
 
 .button {
