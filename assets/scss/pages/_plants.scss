@@ -19,4 +19,16 @@
       order: -1;
     }
   }
+
+  &__title {
+    @include generateBottomBar();
+    padding-bottom: 1.5rem;
+  }
+
+  &__body{
+    &:first-of-type{
+      padding-bottom: 1rem;
+    }
+  }
+
 }
