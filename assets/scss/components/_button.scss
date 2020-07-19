@@ -32,4 +32,10 @@
       color: $support-white-lighter;
     }
   }
+
+  &--disabled {
+    background: $support-white-regular;
+    color: $support-white-darker;
+    cursor: default;
+  }
 }
