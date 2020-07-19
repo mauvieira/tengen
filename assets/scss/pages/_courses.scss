@@ -1,0 +1,52 @@
+.courses{
+  padding: 80px 0;
+
+  &__card {
+    // border: 2px solid $base-regular;
+    border-radius: 8px;
+    @include generateShadow("md");
+
+    &--right{
+      margin-left: 40px;
+
+      @include device(small){
+        margin-left: 0;
+      }
+    }
+    &--left{
+      margin-right: 40px;
+      @include device(small){
+        margin-right: 0px;
+        margin-bottom: 3rem;
+        // margin-bottom: 1rem;
+      }
+    } 
+  }
+
+  &__content{
+    padding: 40px 20px;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 8px 0 0;
+    background: $support-gray-regular;
+  }
+
+  &__title{
+    text-align: center;
+    @include generateBottomBar($focus-regular, true);
+    padding: 1rem 0 0 0;
+  }
+
+  &__button {
+    display: block;
+    max-width: 170px;
+    margin: 0 auto;
+  }
+
+  &__body {
+    padding: 1rem 0;
+  }
+}
