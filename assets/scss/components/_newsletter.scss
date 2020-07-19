@@ -20,4 +20,13 @@
       margin-bottom: 1rem;
     }
   }
+
+  &__wrapper{
+    display: flex;
+    justify-content: flex-end;
+
+    @include device("md"){
+      display: block;
+    }
+  }
 }

@@ -4,6 +4,9 @@
 
   & p {
     color: $support-white-lighter;
+    @include device("sm"){
+      text-align: center;
+    }
   }
 
   &__link {
@@ -14,6 +17,12 @@
 
     &:hover{
       color: $focus-lighter;
+    }
+
+    @include device("sm"){
+      display: block;
+      padding: 1rem 0;
+      font-size: 1.2rem;
     }
   }
 
@@ -26,6 +35,15 @@
 
     @include device("sm"){
       margin: 16px auto;
+    }
+  }
+
+  &__wrapper{
+    display: flex;
+    justify-content: flex-end;
+
+    @include device("sm"){
+      display: block;
     }
   }
 }

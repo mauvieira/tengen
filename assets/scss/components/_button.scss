@@ -8,13 +8,15 @@
   display: inline-block;
   font-size: bodySize("mid");
   line-height: 100%;
+
+  display: block;
+  max-width: 170px;
   @include generateShadow("sm");
 
   @include device("sm"){
-    display: block;
-    max-width: 215px;
     margin: 0 auto;
   }
+
 }
 
 .button {
@@ -37,5 +39,17 @@
     background: $support-white-regular;
     color: $support-white-darker;
     cursor: default;
+  }
+
+  &--large {
+    max-width: 230px;
+    @include device("sm"){
+      max-width: 215px;
+
+    }
+  }
+
+  &--centered{
+    margin: 0 auto;
   }
 }
