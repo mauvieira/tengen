@@ -30,35 +30,103 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo"></div>
-    <nav class="navbar">
-      <ul class="navbar__menu">
-        <li class="navbar__item"></li>
-        <li class="navbar__item"></li>
-        <li class="navbar__item"></li>
-        <li class="navbar__item"></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar grid-12">
+        <div class="navbar__logo">
+          <a href="#">
+            <img src="./assets/img/logo/logo-original.png" alt="Logo | Tengen">
+          </a>
+        </div>
+        <ul class="navbar__menu">
+          <li>
+            <a class="navbar__item" href="#">Sobre</a>
+          </li>
+          <li>
+            <a class="navbar__item" href="#">Plantas</a>
+          </li>
+          <li>
+            <a class="navbar__item" href="#">Como começar</a>
+          </li>
+          <li>
+            <a href="#" class="button button--primary">
+              Cursos
+            </a>
+          </li>
+        </ul>
+        <button class="navbar__hamburger">Menu</button>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero--secondary">
-    <h1></h1>
+  <main class="inside">
+    <div class="container">
+      <h1 class="title--mid inside__title">
+        Como começar
+      </h1>
+    </div>
+  </main>
+
+  <section class="break">
+    <div class="container">
+      <div class="grid-12">
+        <h2 class="subtitle--max break__title">
+          Aprenda a montar sua horta dos sonhos
+        </h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="grid-12">
+        <a href="#" class="button button--primary break__button">
+          Vamos?
+        </a>
+      </div>
+    </div>
   </section>
 
-  <section class="starting">
-    <div class="starting__card"></div>
-    <div class="starting__card starting__card--reverse"></div>
-    <div class="starting__card"></div>
-    <div class="starting__card starting__card--reverse"></div>
+  <section class="newsletter">
+    <div class="container">
+      <div class="grid-12">
+        <h2 class="subtitle--max newsletter__title">
+          Assine nossa Newsletter!
+        </h2>
+      </div>
+    </div>
+    <form id="newsletterForm" class="container newsletter__form">
+      <div class="grid-5">
+        <input type="text" name="nome" id="nome" class="newsletter__input" placeholder="Nome" />
+      </div>
+      <div class="grid-5">
+        <input type="email" name="email" id="email" class="newsletter__input" placeholder="E-mail" />
+      </div>
+      <div class="grid-2">
+        <button class="button button--primary">
+          Assinar
+        </button>
+      </div>
+    </form>
   </section>
 
-
-  <footer class="footer"> 
-    <div class="footer__description"></div>
-    <div class="footer__greetings"></div>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="grid-9">
+        <p class="body--reg">
+          Este é um projeto fictício criado para fins de estudo.
+        </p>
+        <p class="body--reg">
+          Quer fazer um projeto comigo?
+          <a class="footer__link">chame aqui!</a>
+        </p>
+      </div>
+      <div class="grid-3">
+        <div class="footer__logo">
+          <a href="#">
+            <img src="./assets/img/logo/logo-white-green.png" alt="Logo | Tengen">
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
-
 </body>
 
 </html>
