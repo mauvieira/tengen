@@ -1,0 +1,43 @@
+.starting {
+  padding-top: 80px;
+
+  &__steps {
+    padding-bottom: 80px;
+  }
+  &__step {
+
+    @include device(small){
+      order: -1;
+      padding-bottom: 2rem;
+    }
+
+    &--right {
+      padding-left: 100px;
+      @include device(small) {
+        padding-left: 0;
+      }
+    }
+    &--left {
+      padding-right: 100px;
+      @include device(small) {
+        padding-right: 0px;
+      }
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 1rem;
+  }
+  &__number {
+    font-size: 3.5rem;
+    color: $focus-dark;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 400px;
+    background: $support-white-lighter;
+    @include generateShadow("md");
+    border-radius: 8px;
+  }
+}
