@@ -24,17 +24,38 @@
 // Media Queries Mixin
 
 @mixin device($size) {
-  @if $size == large {
+  @if $size == "lg" {
     @media screen and (min-width: $large-device) {
       @content;
     }
-  } @else if $size == medium {
+  } @else if $size == "md" {
     @media screen and (max-width: $large-device - 1) {
       @content;
     }
-  } @else if $size == small {
+  } @else if $size == "sm" {
     @media screen and (max-width: $medium-device - 1) {
       @content;
+    }
+  }
+}
+
+// Space Mixin
+
+@mixin space($size: 80px, $position: "top-bottom") {
+  @if $position == "top-bottom" {
+    padding: $size 0;
+    @include device(small) {
+      padding: 64px 0;
+    }
+  } @else if $position == "top" {
+    padding-top: $size;
+    @include device(small) {
+      padding-top: 64px;
+    }
+  } @else if $position == "bottom" {
+    padding-bottom: $size;
+    @include device(small) {
+      padding-bottom: 64px;
     }
   }
 }

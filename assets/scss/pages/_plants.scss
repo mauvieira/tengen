@@ -13,7 +13,7 @@
 
   &__text{
     padding-left: 100px;
-    @include device(small){
+    @include device("sm"){
       padding-left: 0;
       padding-bottom: 2rem;
       order: -1;

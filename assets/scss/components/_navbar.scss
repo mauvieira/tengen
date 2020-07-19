@@ -8,14 +8,14 @@
   align-items: center;
   &__logo {
     max-width: 190px;
-    @include device(small){
+    @include device("sm"){
       max-width: 150px;
     }
   }
   &__menu {
     display: flex;
     align-items: center;
-    @include device(small){
+    @include device("sm"){
       display: none;
     }
   }
@@ -32,7 +32,7 @@
   &__hamburger{
     display: none;
     padding: 24px;
-    @include device(small){
+    @include device("sm"){
       display: block;
     }
   }

@@ -1,7 +1,7 @@
 .hero {
   padding: 128px 0;
 
-  @include device(small) {
+  @include device("sm") {
     padding: 64px 0;
   }
 
@@ -10,7 +10,7 @@
     @include device(medium) {
       padding-right: 30px;
     }
-    @include device(small) {
+    @include device("sm") {
       padding-right: 0;
     }
   }
@@ -19,7 +19,7 @@
   }
 
   &__cards {
-    @include device(small) {
+    @include device("sm") {
       padding-top: 64px;
     }
   }
@@ -39,11 +39,11 @@
       background: $support-white-darker;
       border-radius: 8px;
 
-      @include device(medium) {
+      @include device("md"){
         width: 70px;
         height: 70px;
       }
-      @include device(small) {
+      @include device("sm") {
         width: 100px;
         height: 100px;
       }
@@ -61,7 +61,7 @@
       display: block;
       width: 20px;
 
-      @include device(medium) {
+      @include device("md"){
         bottom: -1rem;
       }
     }
@@ -72,7 +72,7 @@
   padding-bottom: 64px;
   &__text {
     padding-right: 100px;
-    @include device(small) {
+    @include device("sm") {
       padding-right: 0;
     }
   }
@@ -88,7 +88,7 @@
     height: 300px;
     border-radius: 8px;
     background: $support-white-darker;
-    @include device(small) {
+    @include device("sm") {
       margin-top: 2rem;
     }
   }

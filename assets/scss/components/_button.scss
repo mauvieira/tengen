@@ -10,7 +10,7 @@
   line-height: 100%;
   @include generateShadow("sm");
 
-  @include device(small){
+  @include device("sm"){
     display: block;
     max-width: 215px;
     margin: 0 auto;

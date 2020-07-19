@@ -24,7 +24,7 @@
   &__logo {
     max-width: 200px;
 
-    @include device(small){
+    @include device("sm"){
       margin: 16px auto;
     }
   }

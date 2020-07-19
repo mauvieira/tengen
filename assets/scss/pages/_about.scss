@@ -13,13 +13,13 @@
   }
 
   &__text {
-    @include device(small){
+    @include device("sm"){
       padding-bottom: 1rem;
     }
     &--right {
       padding-left: 100px;
 
-      @include device(small){
+      @include device("sm"){
         padding-left: 0;
         order: -1;
       }
@@ -27,14 +27,14 @@
     &--left {
       padding-right: 100px;
 
-      @include device(small){
+      @include device("sm"){
         padding-right: 0;
       }
     }
   }
 
   &__first-text{
-    @include device(small){
+    @include device("sm"){
       order: -1;
     }
   }

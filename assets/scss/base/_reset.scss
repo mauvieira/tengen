@@ -24,7 +24,7 @@ html {
   font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
 
-  @include device(medium){
+  @include device("md"){
     font-size: 14px;
   }
 }

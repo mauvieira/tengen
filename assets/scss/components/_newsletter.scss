@@ -16,7 +16,7 @@
     padding: 12px 8px;
     border: 2px solid $support-gray-lighter;
     font-size: 1rem;
-    @include device(small) {
+    @include device("sm") {
       margin-bottom: 1rem;
     }
   }

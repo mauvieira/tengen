@@ -6,20 +6,20 @@
   }
   &__step {
 
-    @include device(small){
+    @include device("sm"){
       order: -1;
       padding-bottom: 2rem;
     }
 
     &--right {
       padding-left: 100px;
-      @include device(small) {
+      @include device("sm") {
         padding-left: 0;
       }
     }
     &--left {
       padding-right: 100px;
-      @include device(small) {
+      @include device("sm") {
         padding-right: 0px;
       }
     }

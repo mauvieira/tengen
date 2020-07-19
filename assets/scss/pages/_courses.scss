@@ -9,13 +9,13 @@
     &--right{
       margin-left: 40px;
 
-      @include device(small){
+      @include device("sm"){
         margin-left: 0;
       }
     }
     &--left{
       margin-right: 40px;
-      @include device(small){
+      @include device("sm"){
         margin-right: 0px;
         margin-bottom: 3rem;
         // margin-bottom: 1rem;

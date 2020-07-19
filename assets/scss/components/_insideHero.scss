@@ -2,7 +2,7 @@
   padding: 128px 0;
   background: $support-gray-regular;
 
-  @include device(medium){
+  @include device("md"){
     padding: 64px 0;
   }
 
