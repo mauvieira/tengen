@@ -1,5 +1,5 @@
 .courses{
-  padding: 80px 0;
+  @include spaceSection(80px, "top-bottom");
 
   &__card {
     // border: 2px solid $base-regular;
@@ -17,10 +17,10 @@
       margin-right: 40px;
       @include device("sm"){
         margin-right: 0px;
-        margin-bottom: 3rem;
+        margin-bottom: 3rem; 
         // margin-bottom: 1rem;
       }
-    } 
+    }
   }
 
   &__content{

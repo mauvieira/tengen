@@ -1,6 +1,6 @@
 .footer {
   background: $base-regular;
-  padding: 32px 0;
+  @include spaceArticle();
 
   & p {
     color: $support-white-lighter;

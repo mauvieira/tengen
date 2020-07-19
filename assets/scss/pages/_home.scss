@@ -1,9 +1,5 @@
 .hero {
-  padding: 128px 0;
-
-  @include device("sm") {
-    padding: 64px 0;
-  }
+  @include spaceSection(128px, "top-bottom", "sm");
 
   &__content {
     padding-right: 100px;
@@ -69,12 +65,10 @@
 }
 
 .mission {
-  padding-bottom: 64px;
+  @include spaceSection(80px, "bottom", "sm");
+
   &__text {
-    padding-right: 100px;
-    @include device("sm") {
-      padding-right: 0;
-    }
+    @include spaceLateral(100px, "left");
   }
   &__title {
     @include generateBottomBar();
@@ -95,7 +89,8 @@
 }
 
 .impact {
-  padding: 64px 0;
+  @include spaceSection(80px, "top-bottom", "sm");
+  
   background: $focus-darker;
 
   &__title,

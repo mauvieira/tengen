@@ -1,8 +1,8 @@
 .history {
-  padding: 80px 0;
+  @include spaceSection();
 
   &__card:first-child {
-    margin-bottom: 80px;
+    @include spaceSection(80px, "bottom");
   }
 
   &__picture {
@@ -13,33 +13,28 @@
   }
 
   &__text {
-    @include device("sm"){
+    @include device("sm") {
       padding-bottom: 1rem;
     }
     &--right {
-      padding-left: 100px;
+      @include spaceLateral(100px, "right");
 
-      @include device("sm"){
-        padding-left: 0;
+      @include device("sm") {
         order: -1;
       }
     }
     &--left {
-      padding-right: 100px;
-
-      @include device("sm"){
-        padding-right: 0;
-      }
+      @include spaceLateral(100px, "left");
     }
   }
 
-  &__first-text{
-    @include device("sm"){
+  &__first-text {
+    @include device("sm") {
       order: -1;
     }
   }
 
-  &__body{
+  &__body {
     padding-bottom: 1rem;
   }
 

@@ -1,8 +1,8 @@
 .plants {
-  padding-top: 80px;
+  @include spaceSection(80px, "top", "sm");
 
   &__card{
-    padding-bottom: 80px;
+    @include spaceSection(80px, "bottom", "sm");
   }
 
   &__picture{
@@ -12,9 +12,9 @@
   }
 
   &__text{
-    padding-left: 100px;
+    @include spaceLateral(100px, "right");
+
     @include device("sm"){
-      padding-left: 0;
       padding-bottom: 2rem;
       order: -1;
     }
@@ -30,5 +30,4 @@
       padding-bottom: 1rem;
     }
   }
-
 }

@@ -41,21 +41,55 @@
 
 // Space Mixin
 
-@mixin space($size: 80px, $position: "top-bottom") {
+@mixin spaceSection($size: 80px, $position: "top-bottom", $breakpoint: "md") {
   @if $position == "top-bottom" {
     padding: $size 0;
-    @include device(small) {
+    @include device($breakpoint) {
       padding: 64px 0;
     }
   } @else if $position == "top" {
     padding-top: $size;
-    @include device(small) {
+    @include device($breakpoint) {
       padding-top: 64px;
     }
   } @else if $position == "bottom" {
     padding-bottom: $size;
-    @include device(small) {
+    @include device($breakpoint) {
       padding-bottom: 64px;
+    }
+  }
+}
+
+@mixin spaceArticle($size: 64px, $position: "top-bottom", $breakpoint: "md") {
+  @if $position == "top-bottom" {
+    padding: $size 0;
+    @include device($breakpoint) {
+      padding: 32px 0;
+    }
+  } @else if $position == "top" {
+    padding-top: $size;
+    @include device($breakpoint) {
+      padding-top: 32px;
+    }
+  } @else if $position == "bottom" {
+    padding-bottom: $size;
+    @include device($breakpoint) {
+      padding-bottom: 32px;
+    }
+  }
+}
+
+@mixin spaceLateral($size: 100px, $position: "right") {
+  @if $position == "right" {
+    padding-left: $size;
+
+    @include device("sm") {
+      padding-left: 0;
+    }
+  } @else if $position == "left" {
+    padding-right: $size;
+    @include device("sm") { 
+      padding-right: 0;
     }
   }
 }

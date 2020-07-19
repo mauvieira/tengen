@@ -1,9 +1,10 @@
 .inside {
-  padding: 128px 0;
   background: $support-gray-regular;
 
-  @include device("md"){
-    padding: 64px 0;
+  @include spaceSection(128px, "top-bottom", "sm");
+
+  @include device("md") {
+    padding: 80px 0;
   }
 
   &__title {

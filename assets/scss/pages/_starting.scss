@@ -1,27 +1,19 @@
 .starting {
-  padding-top: 80px;
-
+  @include spaceSection(80px, "top", "sm");
   &__steps {
-    padding-bottom: 80px;
+    @include spaceSection(80px, "bottom", "sm");
   }
   &__step {
-
-    @include device("sm"){
+    @include device("sm") {
       order: -1;
       padding-bottom: 2rem;
     }
 
     &--right {
-      padding-left: 100px;
-      @include device("sm") {
-        padding-left: 0;
-      }
+      @include spaceLateral(100px, "right");
     }
     &--left {
-      padding-right: 100px;
-      @include device("sm") {
-        padding-right: 0px;
-      }
+      @include spaceLateral(100px, "left");
     }
   }
 
