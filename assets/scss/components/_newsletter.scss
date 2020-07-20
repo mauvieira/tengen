@@ -1,8 +1,13 @@
 .newsletter {
   @include spaceSection(80px, "top-bottom", "sm");
+  position: relative;
 
   &__title {
     margin-bottom: 24px;
+
+    @include device("sm") {
+      text-align: center;
+    }
   }
 
   &__form {
@@ -21,12 +26,23 @@
     }
   }
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     justify-content: flex-end;
 
-    @include device("md"){
+    @include device("md") {
       display: block;
+    }
+  }
+
+  &__message {
+    position: absolute;
+    margin-top: 10px;
+    color: $focus-dark;
+    opacity: 0;
+    &.active {
+      opacity: 1;
+      animation: show-down 0.3s forwards;
     }
   }
 }

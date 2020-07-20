@@ -1,39 +1,150 @@
-.header{
-  @include generateShadow()
+.header {
+  @include generateShadow();
 }
-.navbar{
+.navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
+  &__button{
+    @include device("sm"){
+      background: $support-white-lighter;
+      color: $focus-regular !important;
+    }
+  }
+
   &__logo {
     max-width: 190px;
-    @include device("sm"){
+    @include device("sm") {
       max-width: 150px;
     }
   }
   &__menu {
     display: flex;
     align-items: center;
-    @include device("sm"){
+    @include device("sm") {
       display: none;
+      position: absolute;
+      background: $focus-dark;
+      flex-direction: column;
+      top: 68.5px;
+      width: 100%;
+      padding: 1.5rem 0;
+      border-radius: 0 0 8px 8px;
+      @include generateShadow();
+      & li {
+        width: 100%;
+        text-align: center;
+        & a {
+          width: 100%;
+        }
+      }
+    }
+
+    &.active{
+      display: flex;
+      animation: show-down .3s;
     }
   }
-  &__item{
+  &__item {
     display: block;
     padding: 32px 24px;
     cursor: pointer;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
 
-    &:hover{
+    &:hover {
       color: $focus-darker;
     }
-  }
-  &__hamburger{
-    display: none;
-    padding: 24px;
-    @include device("sm"){
-      display: block;
+
+    @include device("sm") {
+      color: $support-white-lighter;
+      font-size: 1.2rem;
+
+      &:hover{
+        color: $support-white-lighter;
+      }
     }
   }
+
+  [data-dropdown] {
+    position: relative;
+
+    .navbar__submenu{
+      display: none;
+    }
+
+    &:hover{
+      .navbar__submenu{
+        display: block;
+        animation: show-down .3s forwards;
+      }
+    }
+    &.active{
+      .navbar__submenu{
+        display: block;
+        animation: show-down .3s forwards;
+      }
+    }
+  }
+  &__submenu {
+    position: absolute;
+    background: $focus-regular;
+    border-radius: 0 0 8px 8px;
+    @include generateShadow();
+
+    & a {
+      color: $support-white-lighter;
+      padding: 1rem 1.5rem;
+      display: block;
+      transition: all 0.3s ease-in;
+      border-radius: 0 0 8px 8px;
+
+
+      &:hover {
+        background: $focus-dark;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -10px;
+      width: 0;
+      height: 0;
+      border-bottom: 10px solid $focus-regular;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+
+    @include device("sm"){
+      position: static;
+      width: 100%;
+      &::before {
+        display: none;
+      }
+      & a {
+        padding: 1.5rem;
+      }
+    }
+  }
+  &__hamburger {
+    display: none;
+    // padding: 24px;
+    background: transparent;
+    // color: $support-white-lighter;
+    max-width: 40px;
+    padding: 1rem 0;
+    @include device("sm") {
+      display: block;
+    };
+    transition: transform .3s;
+    &.active{
+      transform: rotate(90deg);
+    }
+  }
+
 }
+

@@ -38,32 +38,53 @@
             <img src="./assets/img/logo/logo-original.png" alt="Logo | Tengen">
           </a>
         </div>
-        <ul class="navbar__menu">
+        <ul class="navbar__menu" id="menu" data-menu="list">
           <li>
             <a class="navbar__item" href="sobre.html">Sobre</a>
           </li>
-          <li>
-            <a class="navbar__item" href="plantas-aromaticas.html">Plantas</a>
+          <li data-dropdown>
+            <a class="navbar__item" href="#">Plantas</a>
+            <ul class="navbar__submenu">
+              <li>
+                <a href="#">
+                  Populares
+                </a>
+              </li>
+              <li>
+                <a href="plantas-aromaticas.html">
+                  Aromáticas
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Extinção
+                </a>
+              </li>
+            </ul>
           </li>
           <li>
             <a class="navbar__item" href="iniciando.html">Como começar</a>
           </li>
           <li>
-            <a href="cursos.html" class="button button--primary">
+            <a href="cursos.html" class="button button--primary navbar__button">
               Cursos
             </a>
           </li>
         </ul>
-        <button class="navbar__hamburger">Menu</button>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu" class="navbar__hamburger">
+          <img src="./assets/img/icons/hamburger.png" alt="Menu">
+        </button>
       </nav>
     </div>
   </header>
 
   <main class="inside">
     <div class="container">
-      <h1 class="title--mid inside__title">
-        Um pouco sobre nós
-      </h1>
+      <div class="grid-12">
+        <h1 class="title--mid inside__title">
+          Um pouco sobre nós
+        </h1>
+      </div>
     </div>
   </main>
 
@@ -146,12 +167,19 @@
       <div class="grid-5">
         <input type="email" name="email" id="email" class="newsletter__input" placeholder="E-mail" />
       </div>
-      <div class="grid-2">
+      <div class="grid-2 newsletter__wrapper">
         <button class="button button--primary">
           Assinar
         </button>
       </div>
     </form>
+    <div class="container">
+      <div class="grid-12">
+        <p class="body--reg newsletter__message">
+          Obrigado por se cadastrar! verifique seu e-mail ;)
+        </p>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
@@ -165,7 +193,7 @@
           <a class="footer__link" href="mailto:mauriciorenanvs@gmail.com">chame aqui!</a>
         </p>
       </div>
-      <div class="grid-3">
+      <div class="grid-3 footer__wrapper">
         <div class="footer__logo">
           <a href="index.html">
             <img src="./assets/img/logo/logo-white-green.png" alt="Logo | Tengen">
@@ -175,6 +203,7 @@
     </div>
   </footer>
 
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
