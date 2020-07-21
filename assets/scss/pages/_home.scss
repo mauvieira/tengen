@@ -35,7 +35,7 @@
       // background: $support-white-darker;
       border-radius: 8px;
 
-      @include device("md"){
+      @include device("md") {
         width: 70px;
         height: 70px;
       }
@@ -47,8 +47,8 @@
       & img {
         width: 100%;
         object-fit: cover;
-      border-radius: 8px;
-      height: 100%;
+        border-radius: 8px;
+        height: 100%;
       }
     }
     &__content {
@@ -64,7 +64,7 @@
       display: block;
       width: 20px;
 
-      @include device("md"){
+      @include device("md") {
         bottom: -1rem;
       }
     }
@@ -87,8 +87,6 @@
 
   &__picture {
     height: 300px;
-    border-radius: 8px;
-    background: $support-white-darker;
     @include device("sm") {
       margin-top: 2rem;
     }
@@ -97,8 +95,10 @@
 
 .impact {
   @include spaceSection(80px, "top-bottom", "sm");
-  
-  background: $focus-darker;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/impacto.png");
+  background-position: center;
+  background-size: cover;
 
   &__title,
   &__body,
@@ -109,7 +109,7 @@
   }
 
   &__title {
-    @include generateBottomBar($support-gray-darker, true);
+    @include generateBottomBar($focus-regular, true);
     // padding-bottom: 1.5rem;
   }
 
