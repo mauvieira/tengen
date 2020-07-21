@@ -2,19 +2,21 @@
   background: $support-gray-regular;
   @include spaceSection(80px, "top-bottom", "sm");
 
-  &__title{
+  &__title {
     text-align: center;
     color: $support-white-lighter;
     margin-bottom: 1.5rem;
   }
 
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/break.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/break-full.png");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 
   @include device("sm") {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/break.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/break-full.png");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
 }

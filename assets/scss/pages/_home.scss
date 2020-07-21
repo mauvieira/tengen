@@ -99,6 +99,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/impacto.png");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 
   &__title,
   &__body,

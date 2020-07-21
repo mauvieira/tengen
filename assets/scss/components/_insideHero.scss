@@ -22,4 +22,28 @@
       background-size: cover;
     }
   }
+
+  &__iniciando {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/como-comecar.png");
+    background-position: center;
+    background-size: cover;
+
+    @include device("sm"){
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/como-comecar.png");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &__cursos {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/cursos.png");
+    background-position: center;
+    background-size: cover;
+
+    @include device("sm"){
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/cursos.png");
+      background-position: center;
+      background-size: cover;
+    }
+  }
 }
