@@ -10,4 +10,16 @@
   &__title {
     color: $support-white-lighter;
   }
+
+  &__sobre {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/sobre.png");
+    background-position: center;
+    background-size: cover;
+
+    @include device("sm"){
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/sobre.png");
+      background-position: center;
+      background-size: cover;
+    }
+  }
 }

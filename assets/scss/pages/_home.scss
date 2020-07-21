@@ -32,7 +32,7 @@
     &__image {
       width: 100px;
       height: 100px;
-      background: $support-white-darker;
+      // background: $support-white-darker;
       border-radius: 8px;
 
       @include device("md"){
@@ -42,6 +42,13 @@
       @include device("sm") {
         width: 100px;
         height: 100px;
+      }
+
+      & img {
+        width: 100%;
+        object-fit: cover;
+      border-radius: 8px;
+      height: 100%;
       }
     }
     &__content {
