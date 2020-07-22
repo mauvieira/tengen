@@ -12,70 +12,70 @@
   }
 
   &__sobre {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/sobre.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/sobre.jpg");
     background-position: center;
     background-size: cover;
 
     @include device("sm"){
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/sobre.png");
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/sobre.jpg");
       background-position: center;
       background-size: cover;
     }
   }
 
   &__iniciando {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/como-comecar.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/como-comecar.jpg");
     background-position: center;
     background-size: cover;
 
     @include device("sm"){
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/como-comecar.png");
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/como-comecar.jpg");
       background-position: center;
       background-size: cover;
     }
   }
 
   &__cursos {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/cursos.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/cursos.jpg");
     background-position: center;
     background-size: cover;
 
     @include device("sm"){
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/cursos.png");
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/cursos.jpg");
       background-position: center;
       background-size: cover;
     }
   }
   &__populares{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/populares.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/populares.jpg");
     background-position: center;
     background-size: cover;
 
     @include device("sm"){
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/populares.png");
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/populares.jpg");
       background-position: center;
       background-size: cover;
     }
   }
 
   &__aromaticas{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/aromaticas.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/aromaticas.jpg");
     background-position: center;
     background-size: cover;
 
     @include device("sm"){
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/aromaticas.png");
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/aromaticas.jpg");
       background-position: center;
       background-size: cover;
     }
   }
   &__extincao{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/extincao.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/extincao.jpg");
     background-position: center;
     background-size: cover;
 
     @include device("sm"){
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/extincao.png");
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/extincao.jpg");
       background-position: center;
       background-size: cover;
     }

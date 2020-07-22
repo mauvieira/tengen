@@ -8,13 +8,13 @@
     margin-bottom: 1.5rem;
   }
 
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/break-full.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../img/backgrounds/break-full.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 
   @include device("sm") {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/break-full.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/backgrounds/break-full.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
