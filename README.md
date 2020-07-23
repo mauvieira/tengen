@@ -7,8 +7,8 @@
 </h4>
 
 <p align="center">
-  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#warning-prerequisites">How To Use</a>
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#ℹ%EF%B8%8F-how-to-use">How To Use</a>
 </p>
 
 ![App Screenshot](https://res.cloudinary.com/dg5pzm35l/image/upload/v1595468079/screenshot-clean_rzgylm.png)
