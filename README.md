@@ -11,7 +11,7 @@
   <a href="#warning-prerequisites">How To Use</a>
 </p>
 
-![App Screenshot](https://res.cloudinary.com/dg5pzm35l/image/upload/v1595467621/tengen-screen-gif_eo3txp.gif)
+![App Screenshot](https://res.cloudinary.com/dg5pzm35l/image/upload/v1595468079/screenshot-clean_rzgylm.png)
 
 <p align="center">
   <a href="https://tengen.netlify.app/" target="_blank">
