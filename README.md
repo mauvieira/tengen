@@ -11,7 +11,7 @@
   <a href="#ℹ%EF%B8%8F-how-to-use">How To Use</a>
 </p>
 
-![App Screenshot](https://res.cloudinary.com/dg5pzm35l/image/upload/v1595468079/screenshot-clean_rzgylm.png)
+![App Screenshot](https://res.cloudinary.com/dg5pzm35l/image/upload/v1595468427/screenshot-new_h4yy2g.png)
 
 <p align="center">
   <a href="https://tengen.netlify.app/" target="_blank">
