@@ -14,7 +14,7 @@
 ![App Screenshot](https://res.cloudinary.com/dg5pzm35l/image/upload/v1595467621/tengen-screen-gif_eo3txp.gif)
 
 <p align="center">
-  <a href="https://tengen.netlify.app/ target="_blank">
+  <a href="https://tengen.netlify.app/" target="_blank">
     <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1563043495/readme_logos/demo_on_netlify_bbuvjz.png">
   </a>
 </p>
@@ -48,3 +48,4 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
   $ npm build:scss
   ```
 
+Made with 💛 by Mauricio Vieira 👋🏼 [Get in touch!](https://www.linkedin.com/in/vieira-mauricio/)
