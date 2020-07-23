@@ -45,7 +45,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
   $ npm install
 
   # Run SCSS compiler
-  $ npm build:scss
+  $ npm run build:scss
   ```
 
 Made with 💛 by Mauricio Vieira 👋🏼 [Get in touch!](https://www.linkedin.com/in/vieira-mauricio/)
