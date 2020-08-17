@@ -36,7 +36,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
   ```bash
   # Clone this repository
-  $ git clone https://github.com/mauriciohike/tengen
+  $ git clone https://github.com/vieiramauricio/tengen
 
   # Go into the repository
   $ cd tengen
